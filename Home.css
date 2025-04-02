@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header .search{
+    border: #333;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    width: 150px;
+    height: 80px;
+    margin-left: 20px;
+    background-image:url(././resources/vnr\ logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+    margin-top: 30px;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #920f0f;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+header nav ul li a:hover {
+    color: #28a745;
+}
+
+.hero {
+    background-image: url(././resources/vnr\ campus.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    /* color: #333; */
+}
+
+.hero-text button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #920f0f;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #bc0303;
+}
+
+.features {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    color: #28a745;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    display: inline-block;
+    width: 30%;
+    margin: 15px 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}

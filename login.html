@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #85dfa1 0%, #28a745 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            max-width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover {
+            background-color: #28a745;
+        }
+        .alt-login {
+            margin-top: 20px;
+            color: #555;
+        }
+        .alt-login a {
+            color: #6B73FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .alt-login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="alt-login">
+            <p>or</p>
+            <p><a href="#" id="emailLogin">Login with Email ID</a></p>
+        </div>
+        <div class="alt-login">
+            <p>or</p>
+            <p>Don't have an account?<a href="F1.html" target="_blank">click here</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailLogin').addEventListener('click', function(event) {
+            event.preventDefault();
+            const usernameField = document.getElementById('username');
+            const passwordField = document.getElementById('password');
+            
+            usernameField.setAttribute('type', 'email');
+            usernameField.setAttribute('placeholder', 'Enter your email ID');
+            usernameField.setAttribute('name', 'email');
+            usernameField.setAttribute('id', 'email');
+            passwordField.setAttribute('placeholder', 'Enter your password');
+            
+            document.querySelector('label[for="username"]').textContent = 'Email ID';
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add form submission logic here
+            alert('Form submitted');
+        });
+    </script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    } 
+</script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+</body>
+</html>
